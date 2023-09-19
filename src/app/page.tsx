@@ -1,7 +1,7 @@
 import styles from './page.module.css'
 import Navbar from './components/navbar'
 import Button from '@mui/material-next/Button';
-import SearchIcon from '@mui/icons-material/Search';
+import SouthEastIcon from '@mui/icons-material/SouthEast';
 import { HOME_CONTACT_US, HOME_SUBTITLE, HOME_TITLE_ONE, HOME_TITLE_TWO } from './texts/homeTexts'
 
 export default function Home() {
@@ -19,8 +19,15 @@ export default function Home() {
           <p>{HOME_SUBTITLE}</p>
           <Button 
             variant="outlined"  
-            endIcon={<SearchIcon />} 
-            style={{ color: 'white' }}
+            endIcon={<SouthEastIcon style={{ color: 'white' }}/>} 
+            style={{ 
+              color: 'white',
+              fontFamily: 'Neue Haas Grotesk Display Pro',
+              fontSize: '14px',
+              fontStyle: 'normal',
+              fontWeight: 450,
+              lineHeight: 'normal', 
+            }}
           >
             {HOME_CONTACT_US}
           </Button>

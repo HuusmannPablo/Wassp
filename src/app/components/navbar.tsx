@@ -11,6 +11,7 @@ function Navbar() {
                 src='../wassp-logo.svg' 
                 alt='logo' 
                 width={201} height={128} 
+                priority
                 style={{ margin: '0px 30px', cursor: 'pointer' }} 
             />
         </div>
@@ -18,11 +19,11 @@ function Navbar() {
             {NAVBAR_OPTIONS.map((option, index) => (
                 <p key={index} className='button'>{option}</p>
             ))}
-            <div style={{ display: 'flex' }}>
+            <div className={styles.lenguage} style={{ display: 'flex' }}>
                 <p>{NAVBAR_LENGUAGE}</p>
                 <Image
                     src='../arrow-down.svg'
-                    alt='hamburger'
+                    alt='south east arrow'
                     width={24} height={24}
                     style={{ cursor: 'pointer' }} 
                 />

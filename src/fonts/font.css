@@ -2,3 +2,8 @@
     font-family: 'Norwester';
     src: url( '../fonts/norwester.otf' ) format( 'truetype');
 }
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url(../fonts/NeueHaasDisplayLight.ttf) format( 'truetype');
+}

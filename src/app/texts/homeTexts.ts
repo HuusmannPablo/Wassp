@@ -2,8 +2,9 @@
 export const NAVBAR_OPTIONS = [
     'SEARCH',
     'LOGIN',
-    'EN',
 ];
+
+export const NAVBAR_LENGUAGE = 'EN'
 
 // Main Home section
 export const HOME_TITLE_ONE = 'Sea it all'

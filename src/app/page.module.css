@@ -40,7 +40,30 @@
   align-items: center;
 }
 
+.home-title > h3 {
+  color: #FFF;
+  font-family: Norwester;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
 
+.home-title > h1 {
+  color: #FFF;
+  font-family: Norwester;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* font-family: Neue Haas Grotesk Display Pro;
+color: white;
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal; */
 
 /* @keyframes rotate {
   from {

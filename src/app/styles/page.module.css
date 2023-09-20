@@ -7,13 +7,12 @@
   height: 100vh;
 }
 
+/* NAVBAR SECTION */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
 }
 
 .menu {
@@ -41,6 +40,8 @@
 .lenguage {
   display: flex;
 }
+
+/* HOME: SECTION 1 */
 
 .main {
   display: flex;
@@ -101,7 +102,7 @@
   width: 201px;
 }
 
-/* WELCOME SECTION */
+/* HOME: SECTION 2 - INTRODUCTION */
 
 .welcome {
   background: linear-gradient(180deg, #052436 0%, #000719 100%);
@@ -112,11 +113,9 @@
 }
 
 .welcome-title {
-  border: 1px solid red;
   width: 675px;
   height: 120px;
   margin: 240px 0px 30px 40%;
-  /* flex-grow: 1; */
 }
 
 .welcome-title > h1 {
@@ -125,24 +124,21 @@
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
-  line-height: 60px; /* 100% */
+  line-height: 60px;
   text-transform: uppercase;
 }
 
 .welcomeinfo {
-  border: 1px solid green;
   display: flex;
   flex-direction: row;
   gap: 144px;
   margin: 0px 0px 0px 40%;
-
 }
 
 .welcome-subtitle {
   display: flex;
   flex-direction: row;
   gap: 100px;
-
 }
 
 .welcome-subtitle > h4 {
@@ -165,6 +161,18 @@
   width: 323px;
 }
 
+@media (max-width: 1200px) {
+  .welcome-title {
+    margin: 240px 0px 30px 10%;
+  }
+
+  .welcomeinfo {
+    flex-direction: column;
+    margin: 0px 0px 0px 10%;
+    gap: 45px;
+  }
+}
+
 @media (max-width: 786px) {
   .logo img {
     width: 120px;
@@ -179,7 +187,6 @@
   }
 
   .home-title {
-    /* border: 1px solid red; */
     margin-left: 0px;    
     width: 400px;
   }
@@ -193,7 +200,6 @@
   }
 
   .home-subtitle {
-    /* border: 1px solid green; */
     justify-content: space-between;
     align-items: center;
     gap: 0px;
@@ -202,6 +208,16 @@
   .home-subtitle > p {
     font-size: 14px;
     width: 208px;
+  }
+
+  .welcome-title > h1 {
+    font-size: 30px;
+    line-height: normal;
+    width: 380px;
+  }
+
+  .welcome-subtitle-text > p {
+    margin: 0px 0px 45px 0px;
   }
 }
 
@@ -241,4 +257,36 @@
     font-size: 14px;
     width: 208px;
   }
+
+  .welcome-title {
+    width: 330px;
+    height: 72px;
+    margin: 0px 0px 18px 15px;
+  }
+
+  .welcome-title > h1 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .welcome-subtitle {
+    gap: 45px;
+  }
+
+  .welcomeinfo {
+    flex-direction: column;
+    margin: 0px 0px 0px 15px;
+    gap: 32px;
+  }
+
+  .welcome-subtitle-text > p {
+    border: 1px solid white;
+    align-self: center;
+    margin: 0px 0px 45px 0px;
+    font-size: 14px;
+    width: 320px;
+    /* height: 96px; */
+    /* 330x96 */
+  }
+
 }

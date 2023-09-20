@@ -1,7 +1,7 @@
 @import url('../fonts/font.css');
 
 .home {
-  background-image: url('../../public/main-page-background.png');
+  background-image: url('../../public/main-page-background2.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -84,10 +84,11 @@
   /* border: 1px solid white; */
   margin-top: auto;
   display: flex;
+  padding: 0px 33px 0px 0px;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  gap: 50vw;
+  gap: 45vw;
   width: 100%;
 }
 
@@ -102,10 +103,51 @@
   width: 201px;
 }
 
+@media (max-width: 786px) {
+  .logo img {
+    width: 120px;
+    /* height: 40px; */
+  }
+
+  .lenguage {
+    display: none;
+  }
+  
+  .main {
+    padding: 0px 0px 0px 15px;
+  }
+
+  .home-title {
+    border: 1px solid red;
+    margin-left: 0px;    
+    width: 400px;
+  }
+
+  .home-title > h3 {
+    font-size: 18px;
+  }
+
+  .home-title > h1 {
+    font-size: 45px;
+  }
+
+  .home-subtitle {
+    /* border: 1px solid green; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .home-subtitle > p {
+    font-size: 14px;
+    width: 208px;
+  }
+}
+
+
 @media (max-width: 360px) {
   
   .navbar {
-    /* border: 1px solid green; */
     padding: 10px 0px 0px 0px;
   }
 
@@ -114,14 +156,11 @@
     height: 40px;
   }
 
-  .lenguage {
-    display: none;
-  }
-
   .home-title {
     height: 187px;
     width: 330px;
   }
+
   .home-title > h3 {
     font-size: 16px;
   }
@@ -132,6 +171,7 @@
 
   .home-subtitle {
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 31px;
   }

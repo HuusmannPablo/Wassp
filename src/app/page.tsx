@@ -7,9 +7,7 @@ import { HOME_CONTACT_US, HOME_SUBTITLE, HOME_TITLE_ONE, HOME_TITLE_TWO } from '
 export default function Home() {
   return (
     <section className={styles.home}>
-      {/* <section className=''> */}
-        <Navbar />
-      {/* </section> */}
+      <Navbar />
       <section className={styles.main}>
         <div className={`${styles['home-title']}`}>
           <h3>{HOME_TITLE_ONE}</h3>

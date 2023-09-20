@@ -19,7 +19,7 @@ function Navbar() {
             {NAVBAR_OPTIONS.map((option, index) => (
                 <p key={index} className='button'>{option}</p>
             ))}
-            <div className={styles.lenguage} style={{ display: 'flex' }}>
+            <div className={styles.lenguage}>
                 <p>{NAVBAR_LENGUAGE}</p>
                 <Image
                     src='../arrow-down.svg'

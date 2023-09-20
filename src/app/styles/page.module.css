@@ -1,7 +1,7 @@
-@import url('../fonts/font.css');
+@import url('../../fonts/font.css');
 
 .home {
-  background-image: url('../../public/main-page-background2.png');
+  background-image: url('../../../public/main-page-background2.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -43,7 +43,6 @@
 }
 
 .main {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -81,7 +80,6 @@
 }
 
 .home-subtitle {
-  /* border: 1px solid white; */
   margin-top: auto;
   display: flex;
   padding: 0px 33px 0px 0px;
@@ -103,10 +101,73 @@
   width: 201px;
 }
 
+/* WELCOME SECTION */
+
+.welcome {
+  background: linear-gradient(180deg, #052436 0%, #000719 100%);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.welcome-title {
+  border: 1px solid red;
+  width: 675px;
+  height: 120px;
+  margin: 240px 0px 30px 40%;
+  /* flex-grow: 1; */
+}
+
+.welcome-title > h1 {
+  color: #FFF;
+  font-family: Norwester;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 100% */
+  text-transform: uppercase;
+}
+
+.welcomeinfo {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  gap: 144px;
+  margin: 0px 0px 0px 40%;
+
+}
+
+.welcome-subtitle {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+
+}
+
+.welcome-subtitle > h4 {
+  color: #FFF;
+  font-family: Norwester;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.welcome-subtitle-text > p {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  height: 126px;
+  width: 323px;
+}
+
 @media (max-width: 786px) {
   .logo img {
     width: 120px;
-    /* height: 40px; */
   }
 
   .lenguage {
@@ -118,7 +179,7 @@
   }
 
   .home-title {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: 0px;    
     width: 400px;
   }
@@ -181,12 +242,3 @@
     width: 208px;
   }
 }
-
-/* @keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-} */

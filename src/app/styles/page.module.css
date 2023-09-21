@@ -243,7 +243,6 @@
   }
 }
 
-
 @media (max-width: 360px) {
   
   .navbar {
@@ -314,5 +313,4 @@
     font-size: 14px;
     width: 320px;
   }
-
 }
